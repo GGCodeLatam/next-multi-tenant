@@ -13,7 +13,7 @@ export default async function middleware(req) {
   const hostname = req.headers.get("host");
 
   // Se define una lista de dominios permitidos (incluyendo localhost y el dominio real)
-  const allowedDomains = ["localhost:3000", "comercioagil.ar"];
+  const allowedDomains = ["localhost:3000", "tudominio.com"];
 
   // Verificamos si el hostname actual está en la lista de dominios permitidos
   const isAllowedDomain = allowedDomains.some(domain => hostname.includes(domain));
